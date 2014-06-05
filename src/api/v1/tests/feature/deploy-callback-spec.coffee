@@ -22,11 +22,11 @@ requestDeploy = (expectedStatus, callback) ->
 
 describe "callback", ->
 
-  beforeEach -> 
+  beforeEach ->
     patyServer.start()
     callbackServer.start()
   
-  afterEach -> 
+  afterEach ->
     patyServer.stop()
     callbackServer.stop()
 

@@ -30,13 +30,7 @@ You can also set the logging and port number, using:
 SHOW_LOG=true PORT=10001 npm start
 ```
 
-If you want to be able to start the server using the command ```paty-mock-server```, make sure you're in the paty-mock-server directory and run the command:
-
-```
-npm link
-```
-
-This will add a symlink to your local version of the paty-web-server.
+Now your paty-web-server will be listening on port 10001. Hooray!
 
 ## In-Project Usage
 

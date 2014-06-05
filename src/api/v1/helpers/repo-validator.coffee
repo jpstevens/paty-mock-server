@@ -25,7 +25,7 @@ class RepoValidator
   @isValid = (repos) ->
     return false unless typeof repos is "object"
     return false unless @hasAllRepos repos
-    for repoName, repoData of repos 
+    for repoName, repoData of repos
       return false unless @isValidRepoName repoName
       return false unless @isValidBranch repoName, repoData.branch
     true

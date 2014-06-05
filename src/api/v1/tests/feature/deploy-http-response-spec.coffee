@@ -38,7 +38,7 @@ describe "http response", ->
 
     it "responds with status code 200", (done) ->
 
-      request 
+      request
         method: "POST"
         url: "http://localhost:#{port}/v1/deploy"
         json: validPackage

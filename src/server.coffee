@@ -28,8 +28,8 @@ exports.start = (port = 7289, callback = null) ->
 
   # listen
   server = app.listen port, ->
-    console.log "PATY mock server listening on port #{port}" if process.env.SHOW_LOG
+    console.log "PATY mock server [#{process.env.NODE_ENV or 'development'}] listening on port #{port}" if process.env.SHOW_LOG
 
-exports.stop = -> 
+exports.stop = ->
   server.close()
   console.log "PATY-MOCK server closed" if process.env.SHOW_LOG
