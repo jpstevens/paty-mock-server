@@ -1,0 +1,5 @@
+#!/usr/bin/env coffee
+
+patyServer = require("../server")
+
+if process.env.PORT then patyServer.start(process.env.PORT) else patyServer.start()

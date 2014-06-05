@@ -1,0 +1,87 @@
+# paty-mock-server
+
+[![Build Status](https://secure.travis-ci.org/jpstevens/paty-mock-server.png?branch=master)](https://travis-ci.org/jpstevens/paty-mock-server)
+
+Command-line version control tool (semver) for node packages
+
+## Standalone Usage
+
+In the root directory of your project, run:
+
+```
+git clone http://github.com/jpstevens/paty-mock-server
+```
+
+Once the repo has been cloned, run:
+
+```
+npm install
+```
+
+To start the app from the command line, run:
+
+```
+npm start
+```
+
+You can also set the logging and port number, using:
+
+```
+SHOW_LOG=true PORT=10001 npm start
+```
+
+If you want to be able to start the server using the command ```paty-mock-server```, make sure you're in the paty-mock-server directory and run the command:
+
+```
+npm link
+```
+
+This will add a symlink to your local version of the paty-web-server.
+
+## In-Project Usage
+
+In your project directory, run:
+
+```
+npm install jpstevens/paty-mock-server
+```
+
+Then, wherever you need the server, run:
+
+```coffee
+patyServer = require "paty-mock-server"
+
+#start the server on port 1234
+patyServer.start(1234)
+
+# stop the server
+patyServer.stop()
+```
+
+This can be useful when spinning the mock server up in tests.
+
+## Testing
+
+This package is tested using Mocha (with Chai). To run the tests, use:
+
+```
+npm test
+```
+
+Which runs the ``` grunt test ``` command.
+
+If you'd just like to run a particular set of tests (e.g. unit, feature), run:
+
+```
+grunt test:unit
+```
+
+Or:
+
+```
+grunt test:feature
+```
+
+## Trivia:
+
+By default, Paty will launch on port 7289 (the telephone key code for P-A-T-Y).

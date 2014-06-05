@@ -1,0 +1,37 @@
+{
+  "name": "paty-mock-server",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./bin/paty-mock-server",
+    "test": "grunt test"
+  },
+  "bin": {
+    "paty-mock-server": "bin/paty-mock-server"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpstevens/paty-mock-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jpstevens/paty-mock-server/issues"
+  },
+  "homepage": "https://github.com/jpstevens/paty-mock-server",
+  "author": "Jack Stevens <jack.stevens@fundingcircle.com>",
+  "dependencies": {
+    "express": "^4.4.1",
+    "body-parser": "^1.3.0",
+    "request": "^2.36.0",
+    "coffee-script": "^1.7.1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.20.0",
+    "grunt": "^0.4.5",
+    "grunt-coffeelint": "0.0.10",
+    "grunt-mocha-test": "^0.11.0",
+    "grunt-chmod": "^1.0.3"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "repos": {
+    "alpaca": {
+      "branch": "valid-alpaca"
+    },
+    "codas": {
+      "branch": "valid-codas"
+    },
+    "funding_circle_app": {
+      "branch": "production"
+    },
+    "fca-frontend": {
+      "branch": "master"
+    }
+  },
+  "callback_url": null
+}
