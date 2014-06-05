@@ -1,11 +1,11 @@
 {
   "name": "paty-mock-server",
   "version": "0.0.0",
-  "description": "",
-  "main": "server.coffee",
+  "description": "A mock server for the PATY project. Useful for testing.",
+  "main": "src/server.js",
   "scripts": {
     "start": "SHOW_LOG=true NODE_ENV=production node ./dist/start-server.js",
-    "test": "grunt test"
+    "test": "NODE_ENV=production grunt test"
   },
   "bin": {
     "paty-mock-server": "./dist/bin/paty-mock-server"
@@ -34,6 +34,7 @@
     "grunt-mocha-test": "^0.11.0",
     "grunt-contrib-coffee": "^0.10.1",
     "grunt-contrib-clean": "^0.5.0",
-    "grunt-exec": "^0.4.5"
+    "grunt-exec": "^0.4.5",
+    "grunt-contrib-copy": "^0.5.0"
   }
 }
