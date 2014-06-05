@@ -5,7 +5,9 @@
   "main": "dist/server.js",
   "scripts": {
     "start": "SHOW_LOG=true NODE_ENV=production node ./dist/start-server.js",
-    "test": "NODE_ENV=production grunt test"
+    "test": "NODE_ENV=production grunt test",
+    "install": "npm install",
+    "postinstall": "grunt build"
   },
   "private": true,
   "repository": {
