@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/jpstevens/paty-mock-server.png?branch=master)](https://travis-ci.org/jpstevens/paty-mock-server)
 
-Command-line version control tool (semver) for node packages
+A mock server for the PATY project. Useful for testing.
 
 ## Standalone Usage
 
@@ -70,16 +70,22 @@ npm test
 
 Which runs the ``` grunt test ``` command.
 
-If you'd just like to run a particular set of tests (e.g. unit, feature), run:
+The tests are split up into API versions. For version 'v1', for example, run:
 
 ```
-grunt test:unit
+grunt test:v1
+```
+
+If you'd just like to run a particular set of tests (e.g. unit, feature), within that version, run:
+
+```
+grunt test:v1:unit
 ```
 
 Or:
 
 ```
-grunt test:feature
+grunt test:v1:feature
 ```
 
 ## Trivia:
