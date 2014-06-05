@@ -31,17 +31,6 @@ describe "RepoValidator", ->
         repoData.branch = { branch: "invalid-branch" }
         expect(RepoValidator.isValidBranch repoName, repoData.branch).to.equal false
 
-  describe "#isValidBranch", ->
-
-    it "returns true for valid branches", ->
-      for repoName, repoData of repos
-        expect(RepoValidator.isValidBranch repoName, repoData.branch).to.equal true
-
-    it "returns false for invalid branches", ->
-      for repoName, repoData of repos
-        repoData.branch = "invalid-branch"
-        expect(RepoValidator.isValidBranch repoName, repoData.branch).to.equal false
-
     it "returns false for missing branches", ->
       for repoName, repoData of repos
         expect(RepoValidator.isValidBranch repoName, null).to.equal false
