@@ -1,12 +1,11 @@
 {
   "name": "paty-mock-server",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A mock server for the PATY project. Useful for testing.",
   "main": "dist/server.js",
   "scripts": {
     "start": "SHOW_LOG=true NODE_ENV=production node ./dist/start-server.js",
-    "test": "NODE_ENV=production grunt test",
-    "postinstall": "grunt build"
+    "test": "NODE_ENV=production grunt test"
   },
   "private": true,
   "repository": {
