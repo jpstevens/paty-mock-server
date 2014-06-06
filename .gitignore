@@ -1,5 +1,11 @@
 node_modules/.bin
 node_modules/chai
 node_modules/coffee-script
-node_modules/grunt*
+node_modules/grunt
+node_modules/grunt-coffeelint
+node_modules/grunt-contrib-clean
+node_modules/grunt-contrib-coffee
+node_modules/grunt-contrib-copy
+node_modules/grunt-exec
+node_modules/grunt-mocha-test
 node_modules/mocha
