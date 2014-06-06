@@ -1,6 +1,6 @@
 # paty-mock-server
 
-[![Build Status](https://secure.travis-ci.org/jpstevens/paty-mock-server.png?branch=master)](https://travis-ci.org/jpstevens/paty-mock-server)
+[![Build Status](https://secure.travis-ci.org/jpstevens/paty-mock-server.png?branch=npm-package)](https://travis-ci.org/jpstevens/paty-mock-server)
 
 A mock server for the PATY project. Useful for testing.
 
