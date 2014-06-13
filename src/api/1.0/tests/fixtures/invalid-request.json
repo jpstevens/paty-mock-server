@@ -1,0 +1,14 @@
+{
+  "repos": {
+    "alpaca": {
+      "branch": "invalid-branch"
+    },
+    "invalid-repo": {
+      "branch": "valid-codas"
+    },
+    "funding_circle_app": {
+      "branch": "production"
+    }
+  },
+  "callback_url": "..."
+}

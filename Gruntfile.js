@@ -22,19 +22,19 @@ module.exports = function(grunt) {
       }
     },
     mochaTest: {
-      v1_unit: {
+      unit: {
         options: {
           reporter: 'spec',
           colors: true
         },
-        src: ['./<%= testConfig[env].dir %>/api/v1/tests/unit/*-spec.<%= testConfig[env].ext %>']
+        src: ['./<%= testConfig[env].dir %>/api/' + (process.env.API_VERSION || '*') + '/tests/unit/*-spec.<%= testConfig[env].ext %>']
       },
-      v1_feature: {
+      feature: {
         options: {
           reporter: 'spec',
           colors: true
         },
-        src: ['./<%= testConfig[env].dir %>/api/v1/tests/feature/*-spec.<%= testConfig[env].ext %>']
+        src: ['./<%= testConfig[env].dir %>/api/' + (process.env.API_VERSION || '*') + '/tests/feature/*-spec.<%= testConfig[env].ext %>']
       }
     },
     coffee: {
@@ -83,10 +83,9 @@ module.exports = function(grunt) {
   // build
   grunt.registerTask('build', ['coffeelint', 'clean:build', 'coffee', 'copy:dist']);
   // test
-  grunt.registerTask('test:v1:unit', ['mochaTest:v1_unit']);
-  grunt.registerTask('test:v1:feature', ['mochaTest:v1_feature']);
-  grunt.registerTask('test:v1', ['test:v1:unit', 'test:v1:feature']);
-  grunt.registerTask('test', ['mochaTest']);
+  grunt.registerTask('test:unit', ['mochaTest:unit']);
+  grunt.registerTask('test:feature', ['mochaTest:feature']);
+  grunt.registerTask('test', ['test:unit', 'test:feature']);
   // default
-  grunt.registerTask('default', ['build', 'test']);
+  grunt.registerTask('default', ['test', 'build']);
 };
