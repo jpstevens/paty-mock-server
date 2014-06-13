@@ -10,5 +10,5 @@
       "branch": "production"
     }
   },
-  "callback_url": null
+  "callback_url": "..."
 }

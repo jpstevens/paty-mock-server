@@ -64,22 +64,22 @@ npm test
 
 Which runs the ``` grunt test ``` command.
 
-The tests are split up into API versions. For version 'v1', for example, run:
+The tests are split up into API versions. For version '1.0', for example, run:
 
 ```
-grunt test:v1
+grunt PATY_VERSION=1.0 test
 ```
 
 If you'd just like to run a particular set of tests (e.g. unit, feature), within that version, run:
 
 ```
-grunt test:v1:unit
+grunt PATY_VERSION=1.0 test:unit
 ```
 
 Or:
 
 ```
-grunt test:v1:feature
+grunt PATY_VERSION=1.0 test:feature
 ```
 
 ## Trivia:

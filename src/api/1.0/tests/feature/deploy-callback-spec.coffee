@@ -10,7 +10,7 @@ requestDeploy = (expectedStatus, callback) ->
   json.callback_url = "http://localhost:#{callbackPort}/callback"
   request
     method: "POST"
-    url: "http://localhost:#{patyPort}/v1/deploy"
+    url: "http://localhost:#{patyPort}/1.0/deploy"
     json: json
     headers:
       'paty-force-status': expectedStatus
@@ -39,7 +39,7 @@ describe "callback", ->
 
   describe "for successful deploy", ->
 
-    it "responds with a 'successful' status", (done) ->
-      requestDeploy "successful", (data) ->
-        expect(data.status).to.equal "successful"
+    it "responds with a 'success' status", (done) ->
+      requestDeploy "success", (data) ->
+        expect(data.status).to.equal "success"
         done()
