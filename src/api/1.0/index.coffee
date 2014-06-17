@@ -19,8 +19,8 @@ apiRouter.post '/deploy', (req, res, next) ->
     res.json { message: "Deploy request added to queue #{req.body._id}" }
 
   # PATY-FORCE-STATUS
-  status = req.header 'paty-force-status' or 'success'
-    
+  status = req.header('paty-force-status') or 'success'
+  
   # PATY-CALLBACK-DELAY
   delay = 0 or req.header 'paty-callback-delay'
 
