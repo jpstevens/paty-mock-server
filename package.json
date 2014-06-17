@@ -1,6 +1,6 @@
 {
   "name": "paty-mock-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A mock server for the PATY project. Useful for testing.",
   "main": "dist/server.js",
   "scripts": {
